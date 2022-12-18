@@ -1,0 +1,18 @@
+.container {
+    width: 320px;
+    border: solid;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.add-task {
+    width: 280px;
+    height: 45px;
+    border: solid;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.taskIsDone {
+    text-decoration: line-through;
+}
