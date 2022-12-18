@@ -1,19 +1,29 @@
 <div class="container">
-  <h1>{{title | uppercase}}</h1>
+    <h1>{{title | uppercase}}</h1>
+
 
   <div>
     <form (ngSubmit)="addTask()">
       <input type="text" 
-      name="inputText" 
+      name="inputText"
+      class="enter_text" 
       [(ngModel)]="text"
-      [(ngModel)]="inputText" 
+      [(ngModel)]="inputText"
       >
-      <button (click)="clear()">Send</button>
+      <button class="send_button" (click)="clear()">Send</button>
     </form>
   </div>
 
-  <div >
-    <p [class.taskIsDone]="task.taskDone" *ngFor="let task of tasks; let i = index">{{task.text}} <input type="checkbox" [(ngModel)]="task.taskDone"/><button (click)="deleteTask(i)">delete</button></p>
+  <div class="tasks_with_operations">
+    <p
+      [class.taskIsDone]="task.taskDone" 
+      *ngFor="let task of tasks; let i = index">
+      {{task.text}} 
+        <input type="checkbox" [(ngModel)]="task.taskDone" />
+        <button class="delete_button" (click)="deleteTask(i)">
+          delete
+        </button>
+    </p>
   </div>
 
 

@@ -1,17 +1,52 @@
 .container {
+    padding: 0;
     width: 320px;
-    border: solid;
     margin: auto;
     margin-top: 50px;
 }
 
-.add-task {
-    width: 280px;
-    height: 45px;
-    border: solid;
-    margin: auto;
-    margin-top: 20px;
+h1 {
+    text-align: center;
+    margin: 0;
 }
+
+.enter_text {
+    border-color: #2F80ED;
+    border-radius: 8px;
+    margin-left: 10px;
+    height: 30px;
+    width: 220px;
+}
+
+.send_button {
+    margin-left: 10px;
+    height: 36px;
+    width: 63px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Poppins';
+    background-color: #2F80ED;
+    color: white;
+}
+
+.tasks_with_operations {
+    margin-left: 10px;
+}
+
+.tasks_with_operations input {
+    width: 30px
+}
+
+.delete_button {
+    height: 36px;
+    width: 63px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Poppins';
+    background-color: #2F80ED;
+    color: white;
+}
+
 
 .taskIsDone {
     text-decoration: line-through;
